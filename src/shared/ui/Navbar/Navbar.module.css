@@ -66,7 +66,7 @@
   display: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   .container {
     width: 358px;
     margin: 0 auto;
