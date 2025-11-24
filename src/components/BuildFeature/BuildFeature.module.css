@@ -47,6 +47,7 @@
   text-transform: uppercase;
   color: #88b702;
   margin-top: 32px;
+  cursor: pointer;
 }
 
 .buildFeature img {
@@ -84,7 +85,7 @@
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-  }А
+  }
 
   .buildFeature button {
     width: 358px;

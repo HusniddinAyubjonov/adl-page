@@ -14,8 +14,8 @@ export default function Advantages() {
             reliability, and security — built for modern digital businesses.
           </p>
           <div>
-            {OurAdvantages.map((advantages) => (
-              <div key={advantages.title} className={style.advantagesInfo}>
+            {OurAdvantages.map((advantages, index) => (
+              <div key={index} className={style.advantagesInfo}>
                 <div className={style.icon}>
                   <img src={advantages.icon} alt='icon' />
                 </div>

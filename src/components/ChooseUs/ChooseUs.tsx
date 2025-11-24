@@ -14,8 +14,8 @@ export default function ChooseUs() {
               success and innovation.
             </p>
             <div>
-              {Choose.map((сhoose) => (
-                <div key={сhoose.title} className={style.chooseUsInfo}>
+              {Choose.map((сhoose, index) => (
+                <div key={index} className={style.chooseUsInfo}>
                   <div className={style.icon}>
                     <img src={сhoose.icon} alt='icon' />
                   </div>

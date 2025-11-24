@@ -1,0 +1,125 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.review {
+  margin-top: 207px;
+}
+
+.review h1 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 42px;
+  line-height: 55.02px;
+  margin-bottom: 40px;
+}
+
+.review button {
+  background-color: #88b702;
+  margin-top: 22px;
+  width: 358px;
+  height: 70px;
+  gap: 4px;
+  border-radius: 80px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #ffffff;
+  display: none;
+}
+
+.card {
+  flex: 0 0 586px;
+  height: 344px;
+  background: #1e1e1e;
+  border-radius: 40px;
+  padding: 65px 50px;
+}
+
+.cards {
+  display: flex;
+  gap: 26px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 32px;
+  width: 468px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  gap: 22px;
+}
+
+.user_info h3 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.user_info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+@media (max-width: 391px) {
+  .container {
+    width: 358px;
+    margin: 0 auto;
+  }
+
+  .review {
+    margin-top: 120px;
+  }
+
+  .review h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+
+  .review button {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    flex: 0 0 343px;
+    height: 471px;
+  }
+
+  .cards {
+    gap: 16px;
+  }
+
+  .card p {
+    font-size: 18px;
+    line-height: 32px;
+    width: 243px;
+  }
+}

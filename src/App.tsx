@@ -1,24 +1,30 @@
 import "./App.css";
-import Header from "./shared/ui/Header/Header";
-import Navbar from "./shared/ui/Navbar/Navbar";
-import Services from "./components/Services/Service";
-import Advantages from "./components/Advantages/Advantages";
-import ChooseUs from "./components/ChooseUs/ChooseUs";
-import BuildFeature from "./components/BuildFeature/BuildFeature";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import ScrollToTop from "./ScrollToTop";
+
+const HomePage = lazy(() => import("./HomePage/HomePage"));
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Header
-        title='A leading web-studio to take your business to the next level'
-        description='We create modern, user-friendly websites optimized for all devices. Our solutions suit any purpose — from personal projects to large-scale platforms.'
-      />
-      <Services />
-      <Advantages />
-      <ChooseUs />
-      <BuildFeature />
-    </>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Suspense
+        fallback={
+          <h1
+            style={{
+              textAlign: "center",
+              color: "#88B702",
+              marginTop: "300px",
+            }}>
+            Loading...
+          </h1>
+        }>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 
