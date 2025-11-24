@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { servicesData } from "./constants";
-import style from "./YourProject.module.css";
+import style from "./Service.module.css";
 
 export default function Services() {
   return (

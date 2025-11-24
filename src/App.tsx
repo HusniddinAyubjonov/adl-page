@@ -1,7 +1,8 @@
 import "./App.css";
-import Services from "./components/YourProject/YourProject";
 import Header from "./shared/ui/Header/Header";
 import Navbar from "./shared/ui/Navbar/Navbar";
+import Services from "./components/Services/Service";
+import Advantages from "./components/Advantages/Advantages";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         title='A leading web-studio to take your business to the next level'
         description='We create modern, user-friendly websites optimized for all devices. Our solutions suit any purpose — from personal projects to large-scale platforms.'
       />
-      <Services/>
+      <Services />
+      <Advantages />
     </>
   );
 }
