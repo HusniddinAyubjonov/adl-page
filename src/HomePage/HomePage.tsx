@@ -7,6 +7,7 @@ import Services from "../components/Services/Service";
 import StartWithMe from "../components/StartWith/StartWith";
 import Header from "../shared/ui/Header/Header";
 import Navbar from "../shared/ui/Navbar/Navbar";
+import Footer from "../shared/ui/Footer/Footer";
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Review />
       <StartWithMe />
       <News />
+      <Footer />
     </div>
   );
 }
