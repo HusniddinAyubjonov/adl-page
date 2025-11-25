@@ -24,7 +24,7 @@ export default function Navbar() {
             <Link to='/AboutPage'>About</Link>
           </li>
           <li>
-            <a href='#'>Pricing</a>
+            <a href='/PricingPage'>Pricing</a>
           </li>
           <li>
             <a href='#'>Projects</a>

@@ -5,6 +5,7 @@ import ScrollToTop from "./ScrollToTop";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const AboutPage = lazy(() => import("./pages/aboutPage/AboutPage"));
+const PricingPage = lazy(() => import("./pages/PricingPage/PricingPage"));
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/AboutPage' element={<AboutPage />} />
+          <Route path='/PricingPage' element={<PricingPage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
