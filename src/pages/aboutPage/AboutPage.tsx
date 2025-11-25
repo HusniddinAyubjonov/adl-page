@@ -3,6 +3,7 @@ import Header from "../../shared/ui/Header/Header";
 import Navbar from "../../shared/ui/Navbar/Navbar";
 import OurMission from "./components/OurMission/OurMission";
 import OurPrinciples from "./components/OurPrinciples/OurPrinciples";
+import OurSkils from "./components/OurSkils/OurSkils";
 
 export default function AboutPage() {
   return (
@@ -14,6 +15,7 @@ export default function AboutPage() {
       />
       <OurPrinciples />
       <OurMission />
+      <OurSkils   />
       <Footer />
     </div>
   );
