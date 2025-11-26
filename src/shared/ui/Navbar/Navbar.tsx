@@ -27,13 +27,13 @@ export default function Navbar() {
             <a href='/PricingPage'>Pricing</a>
           </li>
           <li>
-            <a href='#'>Projects</a>
+            <a href='/ProjectsPage'>Projects</a>
           </li>
           <li>
-            <a href='#'>Blog</a>
+            <a href='/BlogPage'>Blog</a>
           </li>
           <li>
-            <a href='#'>Contact us</a>
+            <a href='/ContactUsPage'>Contact us</a>
           </li>
         </ul>
 
@@ -47,22 +47,22 @@ export default function Navbar() {
       <div className={`${style.mobileMenu} ${isOpen ? style.open : ""}`}>
         <ul>
           <li>
-            <a href='#'>Home</a>
+            <a href='/'>Home</a>
           </li>
           <li>
-            <a href='#'>About</a>
+            <a href='/AboutPage'>About</a>
           </li>
           <li>
-            <a href='#'>Pricing</a>
+            <a href='/PricingPage'>Pricing</a>
           </li>
           <li>
-            <a href='#'>Projects</a>
+            <a href='/ProjectsPage'>Projects</a>
           </li>
           <li>
-            <a href='#'>Blog</a>
+            <a href='/BlogPage'>Blog</a>
           </li>
           <li>
-            <a href='#'>Contact us</a>
+            <a href='/ContactUsPage'>Contact us</a>
           </li>
         </ul>
 
