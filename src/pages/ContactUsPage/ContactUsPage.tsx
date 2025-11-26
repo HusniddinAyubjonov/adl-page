@@ -1,5 +1,6 @@
 import Footer from "../../shared/ui/Footer/Footer";
 import Navbar from "../../shared/ui/Navbar/Navbar";
+import { FAQ } from "./components/Faq/Faq";
 import { Contact } from "./constants";
 import style from "./ContactUsPage.module.css";
 
@@ -61,6 +62,7 @@ export default function ContactUsPage() {
           </div>
         </div>
       </section>
+      <FAQ />
       <Footer />
     </>
   );
