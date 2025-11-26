@@ -1,0 +1,128 @@
+.container {
+  max-width: 558px;
+  margin: 0 auto;
+}
+
+.notFound {
+  margin-top: 160px;
+  margin-bottom: 220px;
+}
+
+.notFound h1 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 180px;
+  line-height: 160px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #88b702;
+}
+
+.notFound h2 {
+  margin-top: 16px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 42px;
+  line-height: 55.02px;
+  letter-spacing: -0.42px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.notFound p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 16px;
+}
+
+.notFound div {
+  display: flex;
+  gap: 24px;
+  width: 366px;
+  margin: 40px auto;
+}
+
+.notFound div a button {
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.notFound div a:first-child {
+  background-color: #88b702;
+  width: 192px;
+  height: 70px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound div a:last-child {
+  background-color: #232323;
+  opacity: 0.5;
+  width: 150px;
+  height: 70px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 391px) {
+  .container {
+    width: 358px;
+    margin: 0 auto;
+  }
+
+  .notFound {
+    margin-top: 114px;
+    margin-bottom: 188px;
+  }
+
+  .notFound h1 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  .notFound h2 {
+    margin-top: 32px;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0;
+  }
+
+  .notFound p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .notFound div {
+    flex-direction: column;
+    gap: 16px;
+    width: 358px;
+    margin-top: 32px;
+  }
+
+  .notFound div a:first-child,
+  .notFound div a:last-child {
+    width: 358px;
+    height: 70px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1.6px;
+  }
+}
