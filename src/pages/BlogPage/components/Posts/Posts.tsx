@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Post } from "./Constants";
 import style from "./Posts.module.css";
 
@@ -17,20 +18,22 @@ export default function Posts() {
 
         <div className={style.cards}>
           {Post.map((info, index) => (
-            <div key={index} className={style.card}>
-              <img src={info.img} alt='image' />
-              <button>{info.btnText}</button>
-              <h3>{info.title}</h3>
-              <p>{info.description}</p>
-              <hr />
-              <div className={style.user}>
-                <img src={info.avatar} alt='avatar' />
-                <span>
-                  <h4>{info.full_name}</h4>
-                  <h5>{info.about_user}</h5>
-                </span>
+            <Link to={info.link}>
+              <div key={index} className={style.card}>
+                <img src={info.img} alt='image' />
+                <button>{info.btnText}</button>
+                <h3>{info.title}</h3>
+                <p>{info.description}</p>
+                <hr />
+                <div className={style.user}>
+                  <img src={info.avatar} alt='avatar' />
+                  <span>
+                    <h4>{info.full_name}</h4>
+                    <h5>{info.about_user}</h5>
+                  </span>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

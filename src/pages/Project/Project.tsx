@@ -3,6 +3,8 @@ import HeaderProjects from "../../shared/ui/projectsComponents/Header/HeaderProj
 import avatar from "../../assets/icon/avatar.svg";
 import InfoProjects from "../../shared/ui/projectsComponents/infoProjects/InfoProjects";
 import img from "../../assets/imgs/news-img.png";
+import PostProjects from "../../shared/ui/projectsComponents/PostProjects/PostProjects";
+import Footer from "../../shared/ui/Footer/Footer";
 
 export default function Project() {
   return (
@@ -29,6 +31,8 @@ export default function Project() {
         text9='Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.Lorem ipsum dolor sit ametero irseo, consectetur adipiscing elit. Scelerisque viverra donec diammeo.'
         cardText='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,'
       />
+      <PostProjects />
+      <Footer />
     </>
   );
 }

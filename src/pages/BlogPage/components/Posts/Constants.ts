@@ -2,6 +2,7 @@ import img1 from '../../../../assets/imgs/news-img.png'
 import avatar from '../../../../assets/icon/avatar.svg'
 
 export const Post = [{
+    link: '/Project',
     img: img1,
     btnText: 'Products',
     title: 'The Basics about IT',
@@ -11,6 +12,7 @@ export const Post = [{
     about_user: 'August 2, 2021'
 },
 {
+    link: '/Project',
     img: img1,
     btnText: 'Products',
     title: 'The Basics about IT',
@@ -20,6 +22,7 @@ export const Post = [{
     about_user: 'August 2, 2021'
 },
 {
+    link: '/Project',
     img: img1,
     btnText: 'Products',
     title: 'The Basics about IT',
@@ -29,6 +32,7 @@ export const Post = [{
     about_user: 'August 2, 2021'
 },
 {
+    link: '/Project',
     img: img1,
     btnText: 'Products',
     title: 'The Basics about IT',
@@ -38,6 +42,7 @@ export const Post = [{
     about_user: 'August 2, 2021'
 },
 {
+    link: '/Project',
     img: img1,
     btnText: 'Products',
     title: 'The Basics about IT',
@@ -47,6 +52,7 @@ export const Post = [{
     about_user: 'August 2, 2021'
 },
 {
+    link: '/Project',
     img: img1,
     btnText: 'Products',
     title: 'The Basics about IT',
