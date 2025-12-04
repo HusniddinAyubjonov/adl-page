@@ -263,6 +263,60 @@
   line-height: 3.2rem;
 }
 
+/*---------------------------------------------------------------------------
+      /// Build the Future of Technology with Us
+--------------------------------------------------------------------------- */
+
+.buildFeatureSection {
+  background-color: #88b702;
+}
+
+.buildFeature {
+  padding: 0 12rem;
+  margin-top: 21.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buildFeatureTitle {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 4.2rem;
+  line-height: 5.5rem;
+  vertical-align: middle;
+  width: 58.8rem;
+}
+
+.buildFeatureDescription {
+  width: 49.6rem;
+  margin-top: 1.6rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  vertical-align: middle;
+}
+
+.buildFeatureBtn {
+  padding: 2.7rem 3.2rem;
+  border-radius: 8rem;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  letter-spacing: 1.6px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #88b702;
+  margin-top: 3.2rem;
+  cursor: pointer;
+}
+
+.buildFeatureImg {
+  margin-top: -7.5rem;
+}
+
 @media (min-width: 940px) and (max-width: 1280px) {
   .container {
     padding: 10rem 6rem;
@@ -385,6 +439,7 @@
 
   .chooseUsTexts {
     padding: 0 6rem;
+    /* overflow: hidden; */
   }
 
   .section {
@@ -393,7 +448,8 @@
   }
 
   .imgLaptop {
-    height: 46.4rem;
+    width: 38.4rem;
+    height: auto;
     margin: 10rem 1rem;
   }
 
@@ -417,6 +473,37 @@
     width: 38rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
+  }
+
+  /*---------------------------------------------------------------------------
+      /// Build the Future of Technology with Us
+--------------------------------------------------------------------------- */
+
+  .buildFeature {
+    padding: 0 6rem;
+  }
+
+  .buildFeatureTitle {
+    margin-top: 4rem;
+    font-size: 3.6rem;
+    width: 50rem;
+  }
+
+  .buildFeatureDescription {
+    width: 42rem;
+    font-size: 1.6rem;
+  }
+
+  .buildFeatureImg {
+    width: 30em;
+    margin-top: 14.2rem;
+  }
+
+  .buildFeatureBtn {
+    padding: 3rem 2rem;
+    font-size: 1.6rem;
+    margin-top: 3.2rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -617,6 +704,30 @@
     font-size: 1.6rem;
     line-height: 2.6rem;
   }
+
+  /*---------------------------------------------------------------------------
+      /// Build the Future of Technology with Us
+--------------------------------------------------------------------------- */
+
+  .buildFeature {
+    padding: 0 4rem;
+    margin-top: 12rem;
+  }
+
+  .buildFeatureTitle {
+    font-size: 3rem;
+    width: 40rem;
+  }
+
+  .buildFeatureDescription {
+    width: 36rem;
+    font-size: 1.5rem;
+  }
+
+  .buildFeatureImg {
+    width: 30rem;
+    margin-top: 16rem;
+  }
 }
 
 @media (min-width: 390px) and (max-width: 768px) {
@@ -811,6 +922,41 @@
     width: 30rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
+  }
+
+  /*---------------------------------------------------------------------------
+      /// Build the Future of Technology with Us
+--------------------------------------------------------------------------- */
+  .buildFeature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buildFeatureTitle {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    width: 30rem;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .buildFeatureDescription {
+    width: 33rem;
+    margin: 1.6rem auto;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+  }
+
+  .buildFeatureBtn {
+    width: 35.8rem;
+    margin-top: 1.6rem;
+  }
+
+  .buildFeatureImg {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1007,5 +1153,38 @@
     width: 22rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
+  }
+
+  /*---------------------------------------------------------------------------
+      /// Build the Future of Technology with Us
+--------------------------------------------------------------------------- */
+
+  .buildFeature {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 10rem;
+  }
+
+  .buildFeatureTitle {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .buildFeatureDescription {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  .buildFeatureImg {
+    width: 26rem;
+    margin-top: 3rem;
+  }
+
+  .buildFeatureBtn {
+    width: 100%;
   }
 }

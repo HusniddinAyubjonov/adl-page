@@ -1,7 +1,6 @@
 import clsx from "clsx";
 // import Footer from "../../ui-components/ui/Footer/Footer";
 import Navbar from "../../ui-components/ui/Navbar/Navbar";
-// import BuildFeature from "./components/BuildFeature/BuildFeature";
 // import News from "./components/News/News";
 // import Review from "./components/Reviews/Review";
 // import Services from "./components/Services/Service";
@@ -11,6 +10,7 @@ import { advantagesData, chooseUsData, servicesData } from "./constants";
 
 import img1 from "../../assets/imgs/our-advanture-img.png";
 import img2 from "../../assets/imgs/choose-us-img.png";
+import img3 from "../../assets/imgs/build-feauture.png";
 
 
 export default function Home() {
@@ -98,30 +98,54 @@ export default function Home() {
       --------------------------------------------------------------------------- */}
 
       <section className={style.section}>
-      <div className={style.chooseUsTexts}>
-        <div className={style.chooseUs}>
-          <div className={style.chooseUsText}>
-            <h1 className={style.chooseUsTitle}>Why Choose Us</h1>
-            <p className={style.chooseUsDescription}>
-              We empower businesses with cutting-edge IT solutions that drive
-              success and innovation.
-            </p>
-            <div>
-              {chooseUsData.map((choose, index) => (
-                <div key={index} className={style.chooseUsInfo}>
-                  <div className={style.icons}>
-                    <img className={style.icon} src={choose.icon} alt='icon' />
+        <div className={style.chooseUsTexts}>
+          <div className={style.chooseUs}>
+            <div className={style.chooseUsText}>
+              <h1 className={style.chooseUsTitle}>Why Choose Us</h1>
+              <p className={style.chooseUsDescription}>
+                We empower businesses with cutting-edge IT solutions that drive
+                success and innovation.
+              </p>
+              <div>
+                {chooseUsData.map((choose, index) => (
+                  <div key={index} className={style.chooseUsInfo}>
+                    <div className={style.icons}>
+                      <img
+                        className={style.icon}
+                        src={choose.icon}
+                        alt="icon"
+                      />
+                    </div>
+                    <h3 className={style.chooseUsInfoTitle}>{choose.title}</h3>
                   </div>
-                  <h3 className={style.chooseUsInfoTitle}>{choose.title}</h3>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <img className={style.imgLaptop} src={img2} alt='phone' />
-    </section>
-      {/* <BuildFeature /> */}
+        <img className={style.imgLaptop} src={img2} alt="phone" />
+      </section>
+
+      {/*---------------------------------------------------------------------------
+      /// Build the Future of Technology with Us
+      --------------------------------------------------------------------------- */}
+
+      <section className={style.buildFeatureSection}>
+        <div className={style.buildFeature}>
+          <span className={style.buildFeatureTexts}>
+            <h1 className={style.buildFeatureTitle}>
+              Build the Future of Technology with Us
+            </h1>
+            <p className={style.buildFeatureDescription}>
+              Partner with our team to create innovative, secure, and scalable
+              IT solutions that drive real business results.
+            </p>
+            <button className={style.buildFeatureBtn}>start now</button>
+          </span>
+          <img className={style.buildFeatureImg} src={img3} alt="img phone" />
+        </div>
+      </section>
+
       {/* <Review /> */}
       {/* <StartWithMe /> */}
       {/* <News /> */}
