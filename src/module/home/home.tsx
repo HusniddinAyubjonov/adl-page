@@ -1,7 +1,6 @@
 import clsx from "clsx";
 // import Footer from "../../ui-components/ui/Footer/Footer";
 import Navbar from "../../ui-components/ui/Navbar/Navbar";
-import Advantages from "./components/Advantages/Advantages";
 // import BuildFeature from "./components/BuildFeature/BuildFeature";
 // import ChooseUs from "./components/ChooseUs/ChooseUs";
 // import News from "./components/News/News";
@@ -9,7 +8,9 @@ import Advantages from "./components/Advantages/Advantages";
 // import Services from "./components/Services/Service";
 // import StartWithMe from "./components/StartWith/StartWith";
 import style from "./home.module.css";
-import { servicesData } from "./constants";
+import { advantagesData, servicesData } from "./constants";
+
+import img1 from "../../assets/imgs/our-advanture-img.png";
 
 export default function Home() {
   return (
@@ -25,7 +26,10 @@ export default function Home() {
           platforms.
         </p>
       </section>
-      {/* <Services /> */}
+
+      {/*---------------------------------------------------------------------------
+      /// Build your project
+      --------------------------------------------------------------------------- */}
 
       <section className={style.yourProject}>
         <div>
@@ -53,7 +57,40 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Advantages />
+
+      {/*---------------------------------------------------------------------------
+      /// Our Advantages
+      --------------------------------------------------------------------------- */}
+
+      <section>
+        <div className={style.advantages}>
+          <img className={style.advantagesImg} src={img1} alt="phone" />
+          <div className={style.advantagesText}>
+            <h1 className={style.advantagesTitle}>Our Advantages</h1>
+            <p className={style.advantagesDescription}>
+              We turn technology into growth. <br /> Our solutions deliver
+              speed, reliability, and security — built for modern digital
+              businesses.
+            </p>
+            <div>
+              {advantagesData.map((advantages, index) => (
+                <div key={index} className={style.advantagesInfo}>
+                  <div className={style.advantagesIcons}>
+                    <img
+                      className={style.advantagesIcon}
+                      src={advantages.icon}
+                      alt="icon"
+                    />
+                  </div>
+                  <h3 className={style.advantagesInfoText}>
+                    {advantages.title}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <ChooseUs /> */}
       {/* <BuildFeature /> */}
       {/* <Review /> */}

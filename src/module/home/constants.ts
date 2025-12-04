@@ -1,8 +1,11 @@
-import img1 from '../../assets/icon/web-site-icon.svg'
-import img2 from '../../assets/icon/web-product-development-icon.svg'
-import img3 from '../../assets/icon/ai-integration-icon.svg'
-import img4 from '../../assets/icon/secure-auth-icon.svg'
-import img5 from '../../assets/imgs/ios-mobile-img.png'
+import img1 from "../../assets/icon/web-site-icon.svg";
+import img2 from "../../assets/icon/web-product-development-icon.svg";
+import img3 from "../../assets/icon/ai-integration-icon.svg";
+import img4 from "../../assets/icon/secure-auth-icon.svg";
+import img5 from "../../assets/imgs/ios-mobile-img.png";
+import img6 from "../../assets/icon/advantages-icon1.svg";
+import img7 from "../../assets/icon/advantages-icon2.svg";
+import img8 from "../../assets/icon/advantages-icon3.svg";
 
 export const servicesData = [
   {
@@ -34,5 +37,20 @@ export const servicesData = [
     title: "SECURE AUTHENTICATION",
     description:
       "Implementation of modern user authentication and protection methods.",
+  },
+];
+
+export const advantagesData = [
+  {
+    icon: img6,
+    title: "Save more with our optimized infrastructure costs.",
+  },
+  {
+    icon: img7,
+    title: "High-performance systems ensuring speed and data protection.",
+  },
+  {
+    icon: img8,
+    title: "Enterprise-grade security for all your operations.",
   },
 ];
