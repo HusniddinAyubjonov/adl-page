@@ -9,6 +9,9 @@ import img8 from "../../assets/icon/advantages-icon3.svg";
 import img9 from "../../assets/icon/choose-us-icon1.svg";
 import img10 from "../../assets/icon/choose-us-icon2.svg";
 import img11 from "../../assets/icon/choose-us-icon3.svg";
+import img12 from "../../assets/icon/start-with-icon1.svg";
+import img13 from "../../assets/icon/start-with-icon2.svg";
+import img14 from "../../assets/icon/start-with-icon3.svg";
 import avatar from "../../assets/icon/avatar.svg";
 
 export const servicesData = [
@@ -88,5 +91,20 @@ export const reviewData = [
     avatar: avatar,
     fullName: "John carter",
     role: "Role, Company",
+  },
+];
+
+export const startWithData = [
+  {
+    icon: img12,
+    title: "Contact with us",
+  },
+  {
+    icon: img13,
+    title: "Discuss the details",
+  },
+  {
+    icon: img14,
+    title: "Start building",
   },
 ];

@@ -4,12 +4,18 @@ import Navbar from "../../ui-components/ui/Navbar/Navbar";
 // import Footer from "../../ui-components/ui/Footer/Footer";
 // import News from "./components/News/News";
 // import Services from "./components/Services/Service";
-// import StartWithMe from "./components/StartWith/StartWith";
-import { advantagesData, chooseUsData, reviewData, servicesData } from "./constants";
+import {
+  advantagesData,
+  chooseUsData,
+  reviewData,
+  servicesData,
+  startWithData,
+} from "./constants";
 
 import img1 from "../../assets/imgs/our-advanture-img.png";
 import img2 from "../../assets/imgs/choose-us-img.png";
 import img3 from "../../assets/imgs/build-feauture.png";
+import img4 from "../../assets/imgs/video.png";
 
 export default function Home() {
   return (
@@ -172,7 +178,31 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <StartWithMe /> */}
+      {/*---------------------------------------------------------------------------
+      /// StartWithMe
+      --------------------------------------------------------------------------- */}
+
+      <div className={style.starts}>
+        <div className={style.startText}>
+          <h1 className={style.startTitle}>Get started today</h1>
+          <p className={style.startDescription}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+            nulla suspendisse tortor aene.
+          </p>
+          <div>
+            {startWithData.map((start, index) => (
+              <div key={index} className={style.startInfo}>
+                <div className={style.icons}>
+                  <img className={style.icon} src={start.icon} alt="icon" />
+                </div>
+                <h3 className={style.startInfoTitle}>{start.title}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+        <img src={img4} alt="phone" className={style.video} />
+      </div>
+
       {/* <News /> */}
       {/* <Footer /> */}
     </div>
