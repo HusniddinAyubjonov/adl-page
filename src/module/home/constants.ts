@@ -6,9 +6,9 @@ import img5 from "../../assets/imgs/ios-mobile-img.png";
 import img6 from "../../assets/icon/advantages-icon1.svg";
 import img7 from "../../assets/icon/advantages-icon2.svg";
 import img8 from "../../assets/icon/advantages-icon3.svg";
-import img9 from '../../assets/icon/choose-us-icon1.svg'
-import img10 from '../../assets/icon/choose-us-icon2.svg'
-import img11 from '../../assets/icon/choose-us-icon3.svg'
+import img9 from "../../assets/icon/choose-us-icon1.svg";
+import img10 from "../../assets/icon/choose-us-icon2.svg";
+import img11 from "../../assets/icon/choose-us-icon3.svg";
 import avatar from "../../assets/icon/avatar.svg";
 
 export const servicesData = [
@@ -79,14 +79,14 @@ export const reviewData = [
     feedback:
       "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”",
     avatar: avatar,
-    full_name: "John carter",
+    fullName: "John carter",
     role: "Role, Company",
   },
   {
     feedback:
       "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in”",
     avatar: avatar,
-    full_name: "John carter",
+    fullName: "John carter",
     role: "Role, Company",
   },
 ];

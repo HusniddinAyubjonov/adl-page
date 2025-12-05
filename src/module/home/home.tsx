@@ -1,12 +1,11 @@
 import clsx from "clsx";
 import style from "./home.module.css";
-// import Footer from "../../ui-components/ui/Footer/Footer";
 import Navbar from "../../ui-components/ui/Navbar/Navbar";
-import Review from "./components/Reviews/Review";
+// import Footer from "../../ui-components/ui/Footer/Footer";
 // import News from "./components/News/News";
 // import Services from "./components/Services/Service";
 // import StartWithMe from "./components/StartWith/StartWith";
-import { advantagesData, chooseUsData, servicesData } from "./constants";
+import { advantagesData, chooseUsData, reviewData, servicesData } from "./constants";
 
 import img1 from "../../assets/imgs/our-advanture-img.png";
 import img2 from "../../assets/imgs/choose-us-img.png";
@@ -149,7 +148,30 @@ export default function Home() {
       /// Reviews
       --------------------------------------------------------------------------- */}
 
-      <Review />
+      <div className={style.review}>
+        <h1 className={style.reviewTitle}>What our users say?</h1>
+        <button className={style.reviewBtn}>view all comments</button>
+
+        <div className={style.reviewCards}>
+          {reviewData.map((item, index) => (
+            <div className={style.reviewCard} key={index}>
+              <p className={style.cardFeeback}>{item.feedback}</p>
+              <div className={style.user}>
+                <img
+                  className={style.userAvatar}
+                  src={item.avatar}
+                  alt="avatar"
+                />
+                <div className={style.userInfo}>
+                  <h3 className={style.userFullName}>{item.fullName}</h3>
+                  <p className={style.userRole}>{item.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* <StartWithMe /> */}
       {/* <News /> */}
       {/* <Footer /> */}

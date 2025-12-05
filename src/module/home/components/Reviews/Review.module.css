@@ -2,7 +2,7 @@
   padding: 20.6rem 12.6rem;
 }
 
-.review h1 {
+.reviewTitle {
   font-weight: 700;
   font-style: Bold;
   font-size: 4.2rem;
@@ -10,7 +10,7 @@
   margin-bottom: 4rem;
 }
 
-.review button {
+.reviewBtn {
   background-color: #88b702;
   margin-top: 2.2rem;
   width: 35.8rem;
@@ -38,7 +38,7 @@
   gap: 26px;
 }
 
-.card p {
+.cardFeeback {
   font-weight: 400;
   font-style: Regular;
   font-size: 1.8rem;
@@ -52,13 +52,13 @@
   gap: 2.2rem;
 }
 
-.user img {
+.userAvatar {
   width: 5.8rem;
   height: 5.8rem;
   border-radius: 50%;
 }
 
-.user_info h3 {
+.userFullName {
   font-weight: 700;
   font-style: Bold;
   font-size: 1.6rem;
@@ -68,7 +68,7 @@
   text-transform: uppercase;
 }
 
-.user_info p {
+.userRole {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.8rem;
