@@ -162,6 +162,27 @@
     padding: 1.8rem 0;
     font-size: 1.6rem;
   }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Principles
+---------------------------------------------------------------------------> */
+
+  .ourPrinciples {
+    padding: 0 6rem;
+  }
+
+  .principleCard {
+    flex-direction: column;
+  }
+
+  .principleCardText {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .principleCardDescription {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 940px) {
@@ -178,9 +199,55 @@
   }
 
   .headDescription {
-    width: 35rem;
+    width: 70%;
     margin: 0 auto;
     padding: 1.4rem 0;
+    font-size: 1.6rem;
+  }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Principles
+---------------------------------------------------------------------------> */
+
+  .ourPrinciples {
+    padding: 0 6rem;
+  }
+
+  .ourPrincipleTexts {
+    flex-direction: column;
+  }
+
+  .ourPrincipleTitle {
+    text-align: center;
+  }
+
+  .ourPrincipleDescription {
+    width: 70%;
+    text-align: center;
+  }
+
+  .principleCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.8rem;
+    gap: 1.6rem;
+  }
+
+  .principleCard {
+    flex-direction: column;
+  }
+
+  .principleCardText {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .principleCardTitle {
+    font-size: 1.8rem;
+  }
+
+  .principleCardDescription {
+    width: 100%;
     font-size: 1.6rem;
   }
 }
@@ -206,6 +273,54 @@
     font-size: 1.6rem;
     line-height: 2.6rem;
   }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Principles
+---------------------------------------------------------------------------> */
+
+  .ourPrinciples {
+    padding: 0 2.4rem;
+  }
+
+  .ourPrincipleTexts {
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .ourPrincipleTitle {
+    text-align: start;
+  }
+
+  .ourPrincipleDescription {
+    width: 70%;
+    text-align: start;
+  }
+
+  .principleCards {
+    flex-direction: column;
+    margin-top: 2.8rem;
+    gap: 1.6rem;
+  }
+
+  .principleCard {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .principleCardText {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .principleCardTitle {
+    font-size: 1.8rem;
+  }
+
+  .principleCardDescription {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 390px) {
@@ -228,5 +343,53 @@
     text-align: start;
     font-size: 1.6rem;
     line-height: 2.6rem;
+  }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Principles
+---------------------------------------------------------------------------> */
+
+  .ourPrinciples {
+    padding: 0 2rem;
+  }
+
+  .ourPrincipleTexts {
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .ourPrincipleTitle {
+    text-align: start;
+  }
+
+  .ourPrincipleDescription {
+    width: 70%;
+    text-align: start;
+  }
+
+  .principleCards {
+    flex-direction: column;
+    margin-top: 2.8rem;
+    gap: 1.6rem;
+  }
+
+  .principleCard {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .principleCardText {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .principleCardTitle {
+    font-size: 1.8rem;
+  }
+
+  .principleCardDescription {
+    width: 100%;
+    font-size: 1.6rem;
   }
 }

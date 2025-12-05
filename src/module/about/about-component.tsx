@@ -18,7 +18,7 @@ export default function About() {
           covering frontend and backend. We deliver high-quality, scalable
           solutions and focus on personalized, client-centered results. Most of
           our work is private, but we are ready for new projects.
-        </p>``
+        </p>
       </section>
 
       {/*---------------------------------------------------------------------------
