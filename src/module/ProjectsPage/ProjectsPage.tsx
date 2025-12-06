@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Footer from "../../ui-components/ui/Footer/Footer";
-import Navbar from "../../ui-components/ui/Navbar/Navbar";
 import { Projects } from "./Constants";
 import style from "./ProjectsPage.module.css";
+import { Navbar } from "../../ui-components/Navbar/Navbar";
+import { Footer } from "../../ui-components/Footer/Footer";
 
 export default function ProjectsPage() {
   return (

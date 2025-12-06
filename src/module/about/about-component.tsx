@@ -1,7 +1,7 @@
 import styles from "./about.module.css";
 import { missionData, PrincipleList, skillsData } from "./constants";
-import { Navbar } from "../../ui-components/ui/Navbar/Navbar";
-import { Footer } from "../../ui-components/ui/Footer/Footer";
+import { Navbar } from "../../ui-components/Navbar/Navbar";
+import { Footer } from "../../ui-components/Footer/Footer";
 
 import img from "../../assets/imgs/planet.png";
 

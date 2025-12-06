@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./Navbar.module.css";
 import logo from "/public/logo.svg";
-import menuIcon from "../../../assets/icon/menu-icon.svg";
+import menuIcon from "../../assets/icon/menu-icon.svg";
 import { Link } from "react-router-dom";
 
 export function Navbar() {
@@ -23,19 +23,19 @@ export function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/AboutPage">About</Link>
+            <Link to="/About">About</Link>
           </li>
           <li>
-            <a href="/PricingPage">Pricing</a>
+            <a href="/Pricing">Pricing</a>
           </li>
           <li>
-            <a href="/ProjectsPage">Projects</a>
+            <a href="/ProjectList">Projects</a>
           </li>
           <li>
-            <a href="/BlogPage">Blog</a>
+            <a href="/Blog">Blog</a>
           </li>
           <li>
-            <a href="/ContactUsPage">Contact us</a>
+            <a href="/ContactUs">Contact us</a>
           </li>
         </ul>
 
@@ -53,19 +53,19 @@ export function Navbar() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/AboutPage">About</a>
+              <a href="/About">About</a>
             </li>
             <li>
-              <a href="/PricingPage">Pricing</a>
+              <a href="/Pricing">Pricing</a>
             </li>
             <li>
-              <a href="/ProjectsPage">Projects</a>
+              <a href="/ProjectList">Projects</a>
             </li>
             <li>
-              <a href="/BlogPage">Blog</a>
+              <a href="/Blog">Blog</a>
             </li>
             <li>
-              <a href="/ContactUsPage">Contact us</a>
+              <a href="/ContactUs">Contact us</a>
             </li>
           </ul>
 

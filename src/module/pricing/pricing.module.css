@@ -1,0 +1,281 @@
+.container {
+  padding: 0 12.6rem;
+}
+
+.pricing {
+  margin-top: 4rem;
+  margin-bottom: 11rem;
+}
+
+.pricingTitle {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 6.6rem;
+  line-height: 8rem;
+  letter-spacing: -1px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pricingDescription {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.pricingCards {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.6rem;
+}
+
+.pricingCard {
+  padding: 4.8rem 3rem;
+  background-color: #1e1e1e;
+  border-radius: 4rem;
+}
+
+.pricingCard .tariff {
+  border-radius: 1000px;
+  background-color: #88b702;
+  color: #ffffff;
+  padding: 1rem 1.4rem;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.7px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.pricingCard h1 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 4.2rem;
+  line-height: 5.5rem;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  text-align: start;
+  margin-top: 1.6rem;
+}
+
+.pricingCard p {
+  width: 32.1rem;
+  margin-top: 1.6rem;
+  text-align: start;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.listFeature {
+  margin-top: 1.6rem;
+}
+
+.pricingCard ul p {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.9px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.listFeature {
+  list-style: disc;
+  margin-left: 1.4rem;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.listFeature::marker {
+  color: #88b702;
+}
+
+.btnNextPage {
+  width: 100%;
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
+  background-color: #88b702;
+  border-radius: 8rem;
+  margin-top: 3.8rem;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  letter-spacing: 1.6px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.btnNextPage:hover {
+  background-color: #6fa001;
+  transition: 0.1s ease;
+}
+
+@media (min-width: 940px) and (max-width: 1280px) {
+  .container {
+    padding: 0 6rem;
+  }
+
+  .pricingDescription {
+    width: 60%;
+  }
+
+  .pricingCards {
+    gap: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 940px) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  .pricingTitle {
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+  }
+
+  .pricingDescription {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 70%;
+  }
+
+  .pricingCard {
+    padding: 3rem 2rem;
+    background-color: #1e1e1e;
+    border-radius: 4rem;
+  }
+
+  .pricingCard h1 {
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+  }
+
+  .pricingCard p {
+    width: 28.1rem;
+  }
+
+  .btnNextPage {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .pricingCards {
+    gap: 1.6rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .pricingTitle {
+    font-size: 3.8rem;
+    line-height: 4.6rem;
+    text-align: start;
+  }
+
+  .pricingDescription {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 100%;
+    text-align: start;
+    margin: 0;
+  }
+
+  .pricingCard {
+    padding: 4.8rem 3rem;
+    background-color: #1e1e1e;
+    border-radius: 4rem;
+  }
+
+  .pricingCard h1 {
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+  }
+
+  .pricingCard p {
+    width: 28.1rem;
+  }
+
+  .btnNextPage {
+    width: 100%;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .pricingCards {
+    gap: 1.6rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 390px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .pricingTitle {
+    font-size: 3.8rem;
+    line-height: 4.6rem;
+    text-align: start;
+  }
+
+  .pricingDescription {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 100%;
+    text-align: start;
+    margin: 0;
+  }
+
+  .pricingCard {
+    padding: 4.8rem 3rem;
+    background-color: #1e1e1e;
+    border-radius: 4rem;
+  }
+
+  .pricingCard h1 {
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+  }
+
+  .pricingCard p {
+    width: 100%;
+  }
+
+  .btnNextPage {
+    width: 100%;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .pricingCards {
+    gap: 1.6rem;
+  }
+}

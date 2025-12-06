@@ -5,12 +5,11 @@ import ScrollToTop from "./scroll-to-top.component";
 
 const Home = lazy(() => import("./module/home/home-component"));
 const About = lazy(() => import("./module/about/about-component"));
-const Pricing = lazy(() => import("./module/PricingPage/PricingPage"));
+const Pricing = lazy(() => import("./module/pricing/pricing-component"));
 const Blog = lazy(() => import("./module/BlogPage/BlogPage"));
-const Projects = lazy(() => import("./module/ProjectsPage/ProjectsPage"));
+const ProjectList = lazy(() => import("./module/ProjectsPage/ProjectsPage"));
 const ContactUs = lazy(() => import("./module/ContactUsPage/ContactUsPage"));
 const NotFound = lazy(() => import("./module/NotFoundPage/NotFoundPage"));
-const Project = lazy(() => import("./module/Project/Project"));
 
 function App() {
   // ---------------------------------------------------------------------------
@@ -33,12 +32,11 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/AboutPage" element={<About />} />
-          <Route path="/PricingPage" element={<Pricing />} />
-          <Route path="/BlogPage" element={<Blog />} />
-          <Route path="/ProjectsPage" element={<Projects />} />
-          <Route path="/ContactUsPage" element={<ContactUs />} />
-          <Route path="/Project" element={<Project />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/ProjectList" element={<ProjectList />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

@@ -8,7 +8,6 @@ footer {
   height: 70rem;
 }
 
-/* TOP PART */
 .footerP1 {
   display: flex;
   justify-content: space-between;
@@ -34,14 +33,12 @@ footer {
   justify-content: center;
 }
 
-/* MIDDLE PART */
 .footerCards {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
 }
 
-/* Left menu */
 .footerP2 {
   width: 28rem;
 }
@@ -80,7 +77,6 @@ footer {
   text-transform: uppercase;
 }
 
-/* Right card */
 .card {
   width: 50.9rem;
   height: 28.4rem;
@@ -126,7 +122,6 @@ footer {
   background-color: #6fa001;
 }
 
-/* BOTTOM */
 .footerP3 {
   margin-top: 12.5rem;
 }
@@ -137,69 +132,6 @@ footer {
   line-height: 2.6rem;
   margin-top: 3rem;
 }
-
-/* @media (max-width: 391px) {
-  .container {
-    width: 358px;
-    margin: 0 auto;
-  }
-
-  footer {
-    background-color: #1e1e1e;
-    padding-top: 20px;
-    height: 1020px;
-  }
-
-  .footerP1 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .footerP1 img {
-    width: 130px;
-    height: 60px;
-  }
-
-  .socials {
-    gap: 24px;
-  }
-
-  .footerP2 {
-    width: 341px;
-  }
-
-  .footerCards {
-    flex-direction: column;
-    margin-top: 40px;
-    gap: 90px;
-  }
-
-  .card {
-    width: 342px;
-    height: 343px;
-    padding: 44px 34px;
-    border-radius: 40px;
-    margin-top: 32px;
-  }
-
-  .card p {
-    width: 274px;
-  }
-
-  .card button {
-    width: 274px;
-  }
-
-  .footerP3 {
-    margin-top: 70px;
-  }
-
-  .footerP3 h1 {
-    text-align: center;
-  }
-} */
 
 @media (min-width: 940px) and (max-width: 1280px) {
   .container {

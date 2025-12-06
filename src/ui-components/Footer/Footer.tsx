@@ -1,5 +1,5 @@
 import style from "./Footer.module.css";
-import logo from "../../../../public/logo.svg";
+import logo from "../../../public/logo.svg";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
