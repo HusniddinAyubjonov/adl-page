@@ -88,25 +88,27 @@ export default function About() {
       /// Our Skils
       --------------------------------------------------------------------------- */}
 
-      <div className={styles.skills}>
-        <h2 className={styles.title}>Our skills</h2>
+      <section>
+        <div className={styles.skills}>
+          <h2 className={styles.title}>Our skills</h2>
 
-        <div className={styles.skillBoxs}>
-          {skillsData.map((block) => (
-            <div key={block.title} className={styles.skillBox}>
-              <h3 className={styles.skillBoxTitle}>{block.title}</h3>
+          <div className={styles.skillBoxs}>
+            {skillsData.map((block) => (
+              <div key={block.title} className={styles.skillBox}>
+                <h3 className={styles.skillBoxTitle}>{block.title}</h3>
 
-              <ul className={styles.list}>
-                {block.items.map((item) => (
-                  <li key={item} className={styles.listItem}>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                <ul className={styles.list}>
+                  {block.items.map((item) => (
+                    <li key={item} className={styles.listItem}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
       <Footer />
     </div>

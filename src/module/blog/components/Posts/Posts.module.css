@@ -1,41 +1,36 @@
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 .posts {
-  margin-top: 170px;
-  margin-bottom: 80px;
+  margin-top: 17rem;
+  margin-bottom: 8rem;
 }
 
-.posts span {
+.postHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.posts span h1 {
+.postHeadTitle {
   font-weight: 700;
   font-style: Bold;
-  font-size: 42px;
-  line-height: 55.02px;
+  font-size: 4.2rem;
+  line-height: 5.5rem;
   letter-spacing: 0px;
 }
 
-.posts span div {
+.postBtns {
   display: flex;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
-.posts span div button {
+.postButton {
   color: #fff;
   background-color: #88b702;
-  padding: 8px 24px;
+  padding: 0.8rem 2.4rem;
   border-radius: 1000px;
   font-weight: 400;
   font-style: Regular;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
@@ -43,59 +38,59 @@
   transition: 0.1s ease;
 }
 
-.posts span div button:hover {
+.postButton:hover {
   background-color: #6fa001;
   transition: 0.1s ease;
 }
 
-.cards {
+.postCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
-.card {
-  width: 382px;
-  height: 590px;
-  border-radius: 40px;
+.postCard {
+  overflow: hidden;
+  width: 38rem;
+  padding-bottom: 3.4rem;
+  border-radius: 4rem;
   background-color: #1e1e1e;
 }
 
-.card button {
-  width: 109px;
-  height: 36px;
+.postCardButton {
+  padding: 1rem 1.4rem;
   border-radius: 1000px;
   background-color: #88b702;
   color: #fff;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   letter-spacing: 0.7px;
   vertical-align: middle;
   text-transform: uppercase;
-  margin-left: 22px;
-  margin-top: -22px;
+  margin-left: 2.2rem;
+  margin-top: -2.2rem;
 }
 
-.card h3 {
-  margin-left: 22px;
-  margin-top: 40px;
+.postCardTitle {
+  margin-left: 2.2rem;
+  margin-top: 4rem;
   font-weight: 700;
   font-style: Bold;
-  font-size: 22px;
-  line-height: 31px;
+  font-size: 2.2rem;
+  line-height: 3.1rem;
 }
 
-.card p {
+.postCardDescription {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  margin-left: 22px;
-  margin-top: 32px;
-  margin-bottom: 38px;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin-left: 2.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 3.8rem;
 }
 
-.card hr {
+.postCardLine {
   width: 88%;
   margin: 0 auto;
   border: 1px solid #343534;
@@ -103,41 +98,41 @@
 
 .user {
   display: flex;
-  gap: 22px;
-  margin-left: 22px;
-  margin-top: 28px;
+  gap: 2.2rem;
+  margin-left: 2.2rem;
+  margin-top: 2.8rem;
 }
 
-.user img {
-  width: 60px;
-  height: 60px;
+.avatarIcon {
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
 }
 
-.user span {
+.userInfo {
   display: flex;
   flex-direction: column;
   align-items: start;
   text-align: start;
-  height: 40px;
-  margin-top: 10px;
-  gap: 8px;
+  height: 4rem;
+  margin-top: 1rem;
+  gap: 0.8rem;
 }
 
-.user span h4 {
+.userFullName {
   font-weight: 700;
   font-style: Bold;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
   letter-spacing: 0.8px;
   vertical-align: middle;
   text-transform: uppercase;
 }
 
-.user span h5 {
+.aboutUser {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
   letter-spacing: 0.8px;
   vertical-align: middle;
   text-transform: uppercase;

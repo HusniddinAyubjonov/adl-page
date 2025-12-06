@@ -1,35 +1,34 @@
 import { Link } from "react-router-dom";
-import { Post } from "./Constants";
-import style from "./Posts.module.css";
+import { Post } from "../../constants";
+import styles from "./Posts.module.css";
 
 export default function Posts() {
   return (
-    <section className={style.container}>
-      <div className={style.posts}>
-        <span>
-          <h1>Latest Posts</h1>
-          <div>
-            <button>All</button>
-            <button>Apps</button>
-            <button>Products</button>
-            <button>Tutorial</button>
+      <div className={`${styles.posts} ${styles.container}`}>
+        <span className={styles.postHead}>
+          <h1 className={styles.postHeadTitle}>Latest Posts</h1>
+          <div className={styles.postBtns}>
+            <button className={styles.postButton}>All</button>
+            <button className={styles.postButton}>Apps</button>
+            <button className={styles.postButton}>Products</button>
+            <button className={styles.postButton}>Tutorial</button>
           </div>
         </span>
 
-        <div className={style.cards}>
+        <div className={styles.postCards}>
           {Post.map((info, index) => (
             <Link to={info.link}>
-              <div key={index} className={style.card}>
-                <img src={info.img} alt='image' />
-                <button>{info.btnText}</button>
-                <h3>{info.title}</h3>
-                <p>{info.description}</p>
-                <hr />
-                <div className={style.user}>
-                  <img src={info.avatar} alt='avatar' />
-                  <span>
-                    <h4>{info.full_name}</h4>
-                    <h5>{info.about_user}</h5>
+              <div key={index} className={styles.postCard}>
+                <img className={styles.postCardImg} src={info.img} alt="image" />
+                <button className={styles.postCardButton}>{info.btnText}</button>
+                <h3 className={styles.postCardTitle}>{info.title}</h3>
+                <p className={styles.postCardDescription}>{info.description}</p>
+                <hr className={styles.postCardLine}/>
+                <div className={styles.user}>
+                  <img className={styles.avatarIcon} src={info.avatar} alt="avatar" />
+                  <span className={styles.userInfo}>
+                    <h4 className={styles.userFullName}>{info.full_name}</h4>
+                    <h5 className={styles.aboutUser}>{info.about_user}</h5>
                   </span>
                 </div>
               </div>
@@ -37,6 +36,5 @@ export default function Posts() {
           ))}
         </div>
       </div>
-    </section>
   );
 }

@@ -1,7 +1,7 @@
-import img1 from '../../../../assets/imgs/news-img.png'
-import avatar from '../../../../assets/icon/avatar.svg'
+import img1 from '../../assets/imgs/news-img.png'
+import avatar from '../../assets/icon/avatar.svg'
 
-export const Post = [{
+export const postData = [{
     link: '/Project',
     img: img1,
     btnText: 'Products',

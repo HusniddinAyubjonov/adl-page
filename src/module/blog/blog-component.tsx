@@ -1,9 +1,11 @@
 import { Footer } from "../../ui-components/Footer/Footer";
 import { Navbar } from "../../ui-components/Navbar/Navbar";
 import styles from "./blog.module.css";
-import Posts from "./components/Posts/Posts";
+// import Posts from "./components/Posts/Posts";
 
 import img from "../../assets/imgs/news-img.png";
+import { postData } from "./constants";
+import { Link } from "react-router-dom";
 
 export default function BlogPage() {
   // ---------------------------------------------------------------------------
@@ -11,8 +13,8 @@ export default function BlogPage() {
   return (
     <>
       <Navbar />
-      <section className={styles.container}>
-        <div className={styles.blog}>
+      <section>
+        <div className={`${styles.blog} ${styles.container}`}>
           <span className={styles.blogTexts}>
             <h1 className={styles.blogTitle}>Blog</h1>
             <p className={styles.blogDescription}>
@@ -22,6 +24,7 @@ export default function BlogPage() {
           </span>
         </div>
       </section>
+
       {/*---------------------------------------------------------------------------
       /// HeaderBlog
       ---------------------------------------------------------------------------*/}
@@ -41,8 +44,59 @@ export default function BlogPage() {
           <img className={styles.headImg} src={img} alt="img" />
         </div>
       </section>
-      
-      <Posts />
+
+      {/*---------------------------------------------------------------------------
+      /// Latest Posts
+      ---------------------------------------------------------------------------*/}
+
+      <section>
+        <div className={`${styles.posts} ${styles.container}`}>
+          <span className={styles.postHead}>
+            <h1 className={styles.postHeadTitle}>Latest Posts</h1>
+            <div className={styles.postBtns}>
+              <button className={styles.postButton}>All</button>
+              <button className={styles.postButton}>Apps</button>
+              <button className={styles.postButton}>Products</button>
+              <button className={styles.postButton}>Tutorial</button>
+            </div>
+          </span>
+
+          <div className={styles.postCards}>
+            {postData.map((info, index) => (
+              <Link to={info.link}>
+                <div key={index} className={styles.postCard}>
+                  <img
+                    className={styles.postCardImg}
+                    src={info.img}
+                    alt="image"
+                  />
+                  <button className={styles.postCardButton}>
+                    {info.btnText}
+                  </button>
+                  <h3 className={styles.postCardTitle}>{info.title}</h3>
+                  <p className={styles.postCardDescription}>
+                    {info.description}
+                  </p>
+                  <hr className={styles.postCardLine} />
+                  <div className={styles.user}>
+                    <img
+                      className={styles.avatarIcon}
+                      src={info.avatar}
+                      alt="avatar"
+                    />
+                    <span className={styles.userInfo}>
+                      <h4 className={styles.userFullName}>{info.full_name}</h4>
+                      <h5 className={styles.aboutUser}>{info.about_user}</h5>
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* <Posts /> */}
       <Footer />
     </>
   );
