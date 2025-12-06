@@ -1,6 +1,5 @@
-// import OurSkils from "./components/OurSkils/OurSkils";
 import styles from "./about.module.css";
-import { missionData, PrincipleList } from "./constants";
+import { missionData, PrincipleList, skillsData } from "./constants";
 import { Navbar } from "../../ui-components/ui/Navbar/Navbar";
 import { Footer } from "../../ui-components/ui/Footer/Footer";
 
@@ -85,7 +84,30 @@ export default function About() {
         </section>
       </section>
 
-      {/* <OurSkils /> */}
+      {/*---------------------------------------------------------------------------
+      /// Our Skils
+      --------------------------------------------------------------------------- */}
+
+      <div className={styles.skills}>
+        <h2 className={styles.title}>Our skills</h2>
+
+        <div className={styles.skillBoxs}>
+          {skillsData.map((block) => (
+            <div key={block.title} className={styles.skillBox}>
+              <h3 className={styles.skillBoxTitle}>{block.title}</h3>
+
+              <ul className={styles.list}>
+                {block.items.map((item) => (
+                  <li key={item} className={styles.listItem}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <Footer />
     </div>
   );

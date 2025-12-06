@@ -195,6 +195,51 @@
   vertical-align: middle;
 }
 
+/* <---------------------------------------------------------------------------
+      /// Our Skils
+---------------------------------------------------------------------------> */
+
+.skills {
+  padding: 4rem 12.6rem;
+}
+
+.title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 4.2rem;
+  line-height: 5.5rem;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-bottom: 2rem;
+}
+
+.skillBoxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rem;
+}
+
+.skillBoxTitle {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2.4rem;
+  line-height: 5.5rem;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-bottom: 1.2rem;
+}
+
+.listItem {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
 @media (min-width: 940px) and (max-width: 1280px) {
   .container {
     padding: 10rem 6rem;
@@ -288,6 +333,20 @@
     line-height: 3.2rem;
     letter-spacing: 0%;
     vertical-align: middle;
+  }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Skils
+---------------------------------------------------------------------------> */
+
+  .skills {
+    padding: 4rem 6rem;
+  }
+
+  .skillBoxs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
   }
 }
 
@@ -410,6 +469,20 @@
     letter-spacing: 0%;
     vertical-align: middle;
   }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Skils
+---------------------------------------------------------------------------> */
+
+  .skills {
+    padding: 2rem 4rem;
+  }
+
+  .skillBoxs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
 }
 
 @media (min-width: 390px) and (max-width: 768px) {
@@ -531,11 +604,25 @@
     font-size: 1.6rem;
     line-height: 2.6rem;
   }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Skils
+---------------------------------------------------------------------------> */
+
+  .skills {
+    padding: 2rem 2.4rem;
+  }
+
+  .skillBoxs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 390px) {
   .container {
-    padding: 0 2.4rem;
+    padding: 0 2rem;
   }
 
   .headTitle {
@@ -608,8 +695,12 @@
     font-size: 1.6rem;
   }
 
+  /* <---------------------------------------------------------------------------
+      /// Our Mission
+---------------------------------------------------------------------------> */
+
   .ourMission {
-    padding: 2.4rem;
+    padding: 2rem;
   }
 
   .section {
@@ -648,5 +739,19 @@
   .secondDescription {
     font-size: 1.6rem;
     line-height: 2.6rem;
+  }
+
+  /* <---------------------------------------------------------------------------
+      /// Our Skils
+---------------------------------------------------------------------------> */
+
+  .skills {
+    padding: 2rem 2rem;
+  }
+
+  .skillBoxs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 }
