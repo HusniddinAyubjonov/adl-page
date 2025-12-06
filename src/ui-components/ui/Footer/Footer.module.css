@@ -279,6 +279,11 @@ footer {
     height: auto;
   }
 
+  .footerP1 {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
   .footerP1 img {
     width: 14rem;
     height: auto;
