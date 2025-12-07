@@ -82,7 +82,7 @@
   justify-content: center;
 }
 
-@media (max-width: 391px) {
+@media (min-width: 390px) and (max-width: 1200px) {
   .container {
     width: 358px;
     margin: 0 auto;
