@@ -3,6 +3,8 @@ import { Projects } from "./project-list";
 import style from "./project-list.module.css";
 
 export default function ProjectsPage() {
+  // ---------------------------------------------------------------------------
+
   return (
     <>
       <section className={style.container}>

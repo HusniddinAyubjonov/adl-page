@@ -3,6 +3,8 @@ import styles from "./pricing.module.css";
 import { pricingData } from "./price-list";
 
 export default function PricingPage() {
+  // ---------------------------------------------------------------------------
+
   return (
     <div>
       <section className={styles.container}>

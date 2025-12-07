@@ -1,8 +1,16 @@
-import { FAQ } from "./components/Faq/Faq";
-import { Contact } from "./constants";
+import { useState } from "react";
+import { contactData, faqData } from "./constants";
 import styles from "./contact-us.module.css";
 
 export default function ContactUsPage() {
+  // ---------------------------------------------------------------------------
+
+  const [open, setOpen] = useState<number | null>(null);
+
+  const toggle = (index: number) => {
+    setOpen(open === index ? null : index);
+  };
+
   return (
     <>
       <section className={styles.container}>
@@ -44,12 +52,13 @@ export default function ContactUsPage() {
               pharetra elementum sit id sagittis non donec egestas.
             </p>
             <div className={styles.emails}>
-              {Contact.map((item, index) => (
+              {contactData.map((item, index) => (
                 <div key={index} className={styles.email}>
                   <div className={styles.icons}>
                     <img className={styles.icon} src={item.img} alt="icon" />
                   </div>
-                  <a className={styles.links}
+                  <a
+                    className={styles.links}
                     href={`mailto:${item.email}?subject=Hello&body=Write your message here`}
                   >
                     {item.email}
@@ -60,7 +69,28 @@ export default function ContactUsPage() {
           </div>
         </div>
       </section>
-      <FAQ />
+
+      {/*---------------------------------------------------------------------------
+      /// FAQ
+      --------------------------------------------------------------------------- */}
+
+      <div className={styles.faqContainer}>
+        <h2 className={styles.faqTitle}>FAQ</h2>
+
+        {faqData.map((item, index) => (
+          <div key={index} className={styles.item}>
+            <div className={styles.question} onClick={() => toggle(index)}>
+              <span>{item.question}</span>
+
+              <span className={styles.icon}>{open === index ? "-" : "+"}</span>
+            </div>
+
+            {open === index && (
+              <div className={styles.answer}>{item.answer}</div>
+            )}
+          </div>
+        ))}
+      </div>
     </>
   );
 }
