@@ -63,26 +63,6 @@ export const skillsData = [
     ],
   },
   {
-    title: "Databases",
-    items: [
-      "MySQL",
-      "PostgreSQL",
-      "SQLite",
-      "SQL Server",
-      "Redis",
-      "LevelDB",
-      "CouchDB",
-    ],
-  },
-  {
-    title: "AI",
-    items: ["AI engine", "ChatGPT AI engine"],
-  },
-  {
-    title: "DevOps",
-    items: ["Git", "GitHub", "GitLab", "Bitbucket"],
-  },
-  {
     title: "Back-End",
     items: [
       "Node.js",
@@ -95,5 +75,25 @@ export const skillsData = [
       "Passkey",
       "JWT",
     ],
+  },
+  {
+    title: "Databases",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "SQL Server",
+      "Redis",
+      "LevelDB",
+      "CouchDB",
+    ],
+  },
+  {
+    title: "DevOps",
+    items: ["Git", "GitHub", "GitLab", "Bitbucket"],
+  },
+  {
+    title: "AI",
+    items: ["AI engine", "ChatGPT AI engine"],
   },
 ];

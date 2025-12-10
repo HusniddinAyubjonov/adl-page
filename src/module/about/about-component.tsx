@@ -7,7 +7,6 @@ export default function About() {
   // ---------------------------------------------------------------------------
   return (
     <div>
-
       <section className={styles.container}>
         <h1 className={styles.headTitle}>About Us</h1>
         <p className={styles.headDescription}>
@@ -26,10 +25,6 @@ export default function About() {
         <div className={styles.ourPrinciples}>
           <span className={styles.ourPrincipleTexts}>
             <h1 className={styles.ourPrincipleTitle}>Our Principles</h1>
-            <p className={styles.ourPrincipleDescription}>
-              Our principles are quality, transparency, responsibility, and a
-              personalized approach to every project.
-            </p>
           </span>
 
           <div className={styles.principleCards}>
@@ -77,7 +72,9 @@ export default function About() {
               ))}
             </div>
           </div>
-          <img className={styles.worldImg} src={img} alt="world img" />
+          <div className={styles.worldImgBox}>
+            <img className={styles.worldImg} src={img} alt="world img" />
+          </div>
         </section>
       </section>
 
@@ -106,7 +103,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

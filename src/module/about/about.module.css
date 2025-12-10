@@ -30,12 +30,6 @@
   padding: 0 12.6rem;
 }
 
-.ourPrincipleTexts {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .ourPrincipleTitle {
   font-weight: 700;
   font-style: Bold;
@@ -43,16 +37,6 @@
   line-height: 5.5rem;
   letter-spacing: 0px;
   vertical-align: middle;
-}
-
-.ourPrincipleDescription {
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  letter-spacing: 0%;
-  vertical-align: middle;
-  width: 40%;
 }
 
 .principleCards {
@@ -78,6 +62,10 @@
   border-radius: 2rem;
   width: 6.8rem;
   height: 6.8rem;
+}
+
+.principleCardIcon {
+  width: 50%;
 }
 
 .principleCardText {
@@ -119,6 +107,10 @@
   justify-content: center;
   margin-bottom: 5rem;
   overflow: hidden;
+}
+
+.worldImgBox {
+  width: 170%;
 }
 
 .worldImg {
@@ -178,8 +170,7 @@
 
 .skillBoxs {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12rem;
+  justify-content: space-between;
 }
 
 .skillBoxTitle {
@@ -241,10 +232,6 @@
     margin-top: 3rem;
   }
 
-  .principleCardDescription {
-    width: 100%;
-  }
-
   /* <---------------------------------------------------------------------------
       /// Our Mission
 ---------------------------------------------------------------------------> */
@@ -261,9 +248,12 @@
     overflow: hidden;
   }
 
+  .worldImgBox {
+    width: 170%;
+  }
+
   .worldImg {
-    width: 50%;
-    height: fit-content;
+    width: 100%;
   }
 
   .infoBox {
@@ -308,8 +298,7 @@
 
   .skillBoxs {
     display: flex;
-    flex-wrap: wrap;
-    gap: 6rem;
+    justify-content: space-between;
   }
 }
 
@@ -338,19 +327,10 @@
 ---------------------------------------------------------------------------> */
 
   .ourPrinciples {
-    padding: 0 6rem;
-  }
-
-  .ourPrincipleTexts {
-    flex-direction: column;
+    padding: 0 4rem;
   }
 
   .ourPrincipleTitle {
-    text-align: center;
-  }
-
-  .ourPrincipleDescription {
-    width: 70%;
     text-align: center;
   }
 
@@ -396,8 +376,14 @@
     overflow: hidden;
   }
 
-  .worldImg {
+  .worldImgBox {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
+  }
+
+  .worldImg {
+    width: 50%;
     height: fit-content;
   }
 
@@ -478,23 +464,10 @@
     padding: 0 2.4rem;
   }
 
-  .ourPrincipleTexts {
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
-  }
-
   .ourPrincipleTitle {
     font-size: 2.8rem;
     line-height: 3.6rem;
     text-align: start;
-  }
-
-  .ourPrincipleDescription {
-    width: 70%;
-    text-align: start;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
   }
 
   .principleCards {
@@ -537,6 +510,12 @@
     justify-content: center;
     margin-bottom: 5rem;
     overflow: hidden;
+  }
+
+  .worldImgBox {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
   }
 
   .worldImg {
@@ -613,24 +592,10 @@
     padding: 0 2rem;
   }
 
-  .ourPrincipleTexts {
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
-  }
-
   .ourPrincipleTitle {
     font-size: 2.8rem;
     line-height: 3.6rem;
     text-align: start;
-  }
-
-  .ourPrincipleDescription {
-    width: 70%;
-    text-align: start;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    padding: 1.6rem 0;
   }
 
   .principleCards {
@@ -673,6 +638,12 @@
     justify-content: center;
     margin-bottom: 5rem;
     overflow: hidden;
+  }
+
+  .worldImgBox {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
   }
 
   .worldImg {
