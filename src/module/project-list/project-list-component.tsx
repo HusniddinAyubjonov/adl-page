@@ -11,10 +11,6 @@ export default function ProjectsPage() {
         <div className={style.project}>
           <span>
             <h1>Projects </h1>
-            <p>
-              Most of our projects are closed due to their confidential nature
-              and are covered by NDAs or other non-disclosure agreements.
-            </p>
           </span>
 
           <div className={style.cards}>

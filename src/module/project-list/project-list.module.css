@@ -7,12 +7,6 @@
   margin-bottom: 11rem;
 }
 
-.project span {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .project span h1 {
   font-weight: 700;
   font-style: Bold;
@@ -20,17 +14,6 @@
   line-height: 8rem;
   letter-spacing: -1px;
   vertical-align: middle;
-}
-
-.project span p {
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  letter-spacing: 0%;
-  vertical-align: middle;
-  width: 48%;
-  margin-top: 0.8rem;
 }
 
 .cards {
@@ -86,10 +69,6 @@
     padding: 0 6rem;
   }
 
-  .project span p {
-    width: 55%;
-  }
-
   .cards {
     gap: 2rem;
   }
@@ -112,23 +91,9 @@
     margin-top: 8rem;
   }
 
-  .project span {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.6rem;
-  }
-
   .project span h1 {
     font-size: 4rem;
     line-height: 5rem;
-  }
-
-  .project span p {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    margin-top: 0;
-    text-align: center;
-    width: 70%;
   }
 
   .cards {
@@ -153,22 +118,9 @@
     margin-top: 6rem;
   }
 
-  .project span {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .project span h1 {
     font-size: 3.8rem;
     line-height: 4.6rem;
-    text-align: start;
-  }
-
-  .project span p {
-    width: 100%;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    margin-top: 0;
     text-align: start;
   }
 
@@ -201,20 +153,9 @@
     margin-bottom: 10rem;
   }
 
-  .project span {
-    flex-direction: column;
-    align-items: start;
-  }
-
   .project span h1 {
     font-size: 3.4rem;
     line-height: 4rem;
-  }
-
-  .project span p {
-    width: 100%;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
   }
 
   .cards {

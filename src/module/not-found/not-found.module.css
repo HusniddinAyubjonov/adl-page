@@ -1,18 +1,18 @@
 .container {
-  max-width: 558px;
+  max-width: 55.8rem;
   margin: 0 auto;
 }
 
 .notFound {
-  margin-top: 160px;
-  margin-bottom: 220px;
+  margin-top: 16rem;
+  margin-bottom: 22rem;
 }
 
 .notFound h1 {
   font-weight: 700;
   font-style: Bold;
-  font-size: 180px;
-  line-height: 160px;
+  font-size: 18rem;
+  line-height: 16rem;
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
@@ -20,11 +20,11 @@
 }
 
 .notFound h2 {
-  margin-top: 16px;
+  margin-top: 1.6rem;
   font-weight: 700;
   font-style: Bold;
-  font-size: 42px;
-  line-height: 55.02px;
+  font-size: 4.2rem;
+  line-height: 5.5rem;
   letter-spacing: -0.42px;
   text-align: center;
   vertical-align: middle;
@@ -33,19 +33,19 @@
 .notFound p {
   font-weight: 400;
   font-style: Regular;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
-  margin-top: 16px;
+  margin-top: 1.6rem;
 }
 
 .notFound div {
   display: flex;
-  gap: 24px;
-  width: 366px;
-  margin: 40px auto;
+  gap: 2.4rem;
+  width: 36.6rem;
+  margin: 4rem auto;
 }
 
 .notFound div a button {
@@ -53,8 +53,8 @@
   cursor: pointer;
   font-weight: 700;
   font-style: Bold;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
   letter-spacing: 1.6px;
   text-align: center;
   vertical-align: middle;
@@ -63,9 +63,9 @@
 
 .notFound div a:first-child {
   background-color: #88b702;
-  width: 192px;
-  height: 70px;
-  border-radius: 80px;
+  width: 19.2rem;
+  height: 7rem;
+  border-radius: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,55 +74,102 @@
 .notFound div a:last-child {
   background-color: #232323;
   opacity: 0.5;
-  width: 150px;
-  height: 70px;
-  border-radius: 80px;
+  width: 15rem;
+  height: 7rem;
+  border-radius: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media (min-width: 390px) and (max-width: 1200px) {
+@media (min-width: 390px) and (max-width: 1280px) {
   .container {
-    width: 358px;
+    width: 35.8rem;
     margin: 0 auto;
   }
 
   .notFound {
-    margin-top: 114px;
-    margin-bottom: 188px;
+    margin-top: 11.4rem;
+    margin-bottom: 18.8rem;
   }
 
   .notFound h1 {
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 12rem;
+    line-height: 12rem;
   }
 
   .notFound h2 {
-    margin-top: 32px;
-    font-size: 28px;
-    line-height: 38px;
+    margin-top: 3.2rem;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
     letter-spacing: 0;
   }
 
   .notFound p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
   }
 
   .notFound div {
     flex-direction: column;
-    gap: 16px;
-    width: 358px;
-    margin-top: 32px;
+    gap: 1.6rem;
+    width: 35.8rem;
+    margin-top: 3.2rem;
   }
 
   .notFound div a:first-child,
   .notFound div a:last-child {
-    width: 358px;
-    height: 70px;
-    font-size: 16px;
-    line-height: 16px;
+    width: 35.8rem;
+    height: 7rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: 1.6px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 390px) {
+  .container {
+    width: 32rem;
+    margin: 0 auto;
+  }
+
+  .notFound {
+    margin-top: 8rem;
+    margin-bottom: 14.8rem;
+  }
+
+  .notFound h1 {
+    font-size: 12rem;
+    line-height: 12rem;
+  }
+
+  .notFound h2 {
+    margin-top: 3.2rem;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    letter-spacing: 0;
+  }
+
+  .notFound p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .notFound div {
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 90%;
+    margin-top: 3.2rem;
+  }
+
+  .notFound div a:first-child,
+  .notFound div a:last-child {
+    width: 90%;
+    height: 7rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
     letter-spacing: 1.6px;
   }
 }

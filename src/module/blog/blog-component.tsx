@@ -13,10 +13,6 @@ export default function BlogPage() {
         <div className={`${styles.blog} ${styles.container}`}>
           <span className={styles.blogTexts}>
             <h1 className={styles.blogTitle}>Blog</h1>
-            <p className={styles.blogDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
-              nulla suspendisse tortor aenean dis placerat.
-            </p>
           </span>
         </div>
       </section>
@@ -91,7 +87,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

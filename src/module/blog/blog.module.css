@@ -7,12 +7,6 @@
   margin-bottom: 11rem;
 }
 
-.blogTexts {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .blogTitle {
   font-weight: 700;
   font-style: Bold;
@@ -21,17 +15,6 @@
   letter-spacing: -1px;
   text-align: center;
   vertical-align: middle;
-}
-
-.blogDescription {
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  letter-spacing: 0%;
-  vertical-align: middle;
-  width: 46%;
-  margin-top: 0.8rem;
 }
 
 /*---------------------------------------------------------------------------
@@ -240,10 +223,6 @@
     padding: 0 6rem;
   }
 
-  .blogDescription {
-    width: 55%;
-  }
-
   /*---------------------------------------------------------------------------
       /// HeaderBlog
 --------------------------------------------------------------------------- */
@@ -275,23 +254,9 @@
     padding: 0 4rem;
   }
 
-  .blogTexts {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.6rem;
-  }
-
   .blogTitle {
     font-size: 4rem;
     line-height: 5rem;
-  }
-
-  .blogDescription {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    margin-top: 0;
-    text-align: center;
-    width: 70%;
   }
 
   /*---------------------------------------------------------------------------
@@ -329,23 +294,9 @@
     padding: 0 2.4rem;
   }
 
-  .blogTexts {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.6rem;
-  }
-
   .blogTitle {
     font-size: 3.8rem;
     line-height: 4.6rem;
-    text-align: start;
-  }
-
-  .blogDescription {
-    width: 100%;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    margin-top: 0;
     text-align: start;
   }
 
@@ -403,20 +354,9 @@
     margin-bottom: 0;
   }
 
-  .blogTexts {
-    flex-direction: column;
-    align-items: start;
-  }
-
   .blogTitle {
     font-size: 3.4rem;
     line-height: 4rem;
-  }
-
-  .blogDescription {
-    width: 100%;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
   }
 
   /*---------------------------------------------------------------------------

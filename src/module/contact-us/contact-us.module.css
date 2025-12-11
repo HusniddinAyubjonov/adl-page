@@ -138,6 +138,10 @@ textarea {
   border-radius: 50%;
 }
 
+.icon {
+  width: 50%;
+}
+
 .links {
   font-weight: 500;
   font-style: Medium;
@@ -185,7 +189,7 @@ textarea {
   vertical-align: middle;
 }
 
-.icon {
+.faqIcon {
   font-size: 2.4rem;
 }
 
@@ -272,8 +276,10 @@ textarea {
   }
 
   .emails {
+    display: flex;
+    flex-direction: inherit;
+    flex-wrap: wrap;
     margin-top: 2.8rem;
-    gap: 2.4rem;
   }
 
   /* --------------------------------------------------------------------------- */
@@ -357,7 +363,7 @@ textarea {
     line-height: 3rem;
   }
 
-  .icon {
+  .faqIcon {
     font-size: 2.4rem;
   }
 
@@ -441,7 +447,7 @@ textarea {
     line-height: 3rem;
   }
 
-  .icon {
+  .faqIcon {
     font-size: 2.4rem;
   }
 

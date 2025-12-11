@@ -4,6 +4,8 @@ import { pricingData } from "./price-list";
 import { useEffect } from "react";
 
 export default function PricingPage() {
+  // ---------------------------------------------------------------------------
+
   useEffect(() => {
     const slider = document.querySelector(`.${styles.pricingCards}`);
     const dotsContainer = document.querySelector(`.${styles.pricingDots}`);

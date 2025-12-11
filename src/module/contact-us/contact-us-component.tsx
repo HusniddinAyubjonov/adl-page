@@ -82,7 +82,7 @@ export default function ContactUsPage() {
             <div className={styles.question} onClick={() => toggle(index)}>
               <span>{item.question}</span>
 
-              <span className={styles.icon}>{open === index ? "-" : "+"}</span>
+              <span className={styles.faqIcon}>{open === index ? "-" : "+"}</span>
             </div>
 
             {open === index && (
