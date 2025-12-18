@@ -1,3 +1,5 @@
+// BlogPage.jsx
+import { useState } from "react";
 import styles from "./blog.module.css";
 
 import img from "../../assets/imgs/news-img.png";
@@ -5,7 +7,14 @@ import { postData } from "./constants";
 import { Link } from "react-router-dom";
 
 export default function BlogPage() {
-  // ---------------------------------------------------------------------------
+  const [filter, setFilter] = useState("All");
+
+  const filteredPosts = postData.filter((post) => {
+    if (filter === "All") {
+      return true;
+    }
+    return post.category === filter;
+  });
 
   return (
     <>
@@ -16,10 +25,6 @@ export default function BlogPage() {
           </span>
         </div>
       </section>
-
-      {/*---------------------------------------------------------------------------
-      /// HeaderBlog
-      ---------------------------------------------------------------------------*/}
 
       <section className={styles.container}>
         <div className={styles.head}>
@@ -37,26 +42,30 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/*---------------------------------------------------------------------------
-      /// Latest Posts
-      ---------------------------------------------------------------------------*/}
-
       <section>
         <div className={`${styles.posts} ${styles.container}`}>
           <span className={styles.postHead}>
             <h1 className={styles.postHeadTitle}>Latest Posts</h1>
             <div className={styles.postBtns}>
-              <button className={styles.postButton}>All</button>
-              <button className={styles.postButton}>Apps</button>
-              <button className={styles.postButton}>Products</button>
-              <button className={styles.postButton}>Tutorial</button>
+              {["All", "Apps", "Products", "Tutorial"].map((card) => (
+                <button
+                  key={card}
+                  className={styles.postButton}
+                  onClick={() => setFilter(card)}
+                  style={{
+                    backgroundColor: filter === card ? "#6fa001" : "#1E1F1E",
+                  }}
+                >
+                  {card}
+                </button>
+              ))}
             </div>
           </span>
 
           <div className={styles.postCards}>
-            {postData.map((info, index) => (
-              <Link to={info.link}>
-                <div key={index} className={styles.postCard}>
+            {filteredPosts.map((info, index) => (
+              <Link key={index} to={info.link}>
+                <div className={styles.postCard}>
                   <img
                     className={styles.postCardImg}
                     src={info.img}
