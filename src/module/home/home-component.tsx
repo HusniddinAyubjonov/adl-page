@@ -13,52 +13,14 @@ import img1 from "../../assets/imgs/our-advanture-img.png";
 import img2 from "../../assets/imgs/choose-us-img.png";
 import img3 from "../../assets/imgs/build-feauture.png";
 import img4 from "../../assets/imgs/video.png";
-import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Home() {
   // ---------------------------------------------------------------------------
-
-  useEffect(() => {
-    const track = document.getElementById("sliderTrack") as HTMLElement | null;
-    const dotsContainer = document.getElementById(
-      "reviewDots"
-    ) as HTMLElement | null;
-
-    if (!track || !dotsContainer) return;
-
-    const cards = Array.from(track.children) as HTMLElement[];
-    let currentSlide = 0;
-    const totalSlides = Math.ceil(cards.length / 1);
-
-    dotsContainer.innerHTML = "";
-
-    // создаём точки
-    for (let i = 0; i < totalSlides; i++) {
-      const dot = document.createElement("span");
-      if (i === 0) dot.classList.add(style.activeDot);
-      dot.addEventListener("click", () => goToSlide(i));
-      dotsContainer.appendChild(dot);
-    }
-
-    const dots = Array.from(dotsContainer.children);
-
-    function goToSlide(index: number) {
-      currentSlide = index;
-
-      const cardWidth = cards[0].getBoundingClientRect().width;
-      const gapValue = parseInt(getComputedStyle(track).gap) || 26;
-
-      const offset = (cardWidth + gapValue) * 1 * index;
-
-      track.style.transform = `translateX(-${offset}px)`;
-
-      dots.forEach((dot, idx) => {
-        dot.classList.toggle(style.activeDot, idx === index);
-      });
-    }
-
-    goToSlide(0);
-  }, []);
 
   return (
     <div>
@@ -197,35 +159,55 @@ export default function Home() {
       /// Reviews
       --------------------------------------------------------------------------- */}
 
-      <div className={style.review}>
+      <section className={style.review}>
         <h1 className={style.reviewTitle}>What our users say?</h1>
         <button className={style.reviewBtn}>view all comments</button>
 
         <div className={style.sliderWrapper}>
-          <div className={style.reviewCards} id="sliderTrack">
+          <Swiper
+            modules={[Pagination]}
+            slidesPerView={2}
+            spaceBetween={26}
+            pagination={{
+              clickable: true,
+              el: `.${style.dots}`,
+              bulletClass: style.dot,
+              bulletActiveClass: style.activeDot,
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+            }}
+          >
             {reviewData.map((item, index) => (
-              <div className={style.reviewCard} key={index}>
-                <p className={style.cardFeeback}>{item.feedback}</p>
+              <SwiperSlide key={index}>
+                <div className={style.reviewCard}>
+                  <p className={style.cardFeeback}>{item.feedback}</p>
 
-                <div className={style.user}>
-                  <img
-                    className={style.userAvatar}
-                    src={item.avatar}
-                    alt="avatar"
-                  />
+                  <div className={style.user}>
+                    <img
+                      className={style.userAvatar}
+                      src={item.avatar}
+                      alt="avatar"
+                    />
 
-                  <div className={style.userInfo}>
-                    <h3 className={style.userFullName}>{item.fullName}</h3>
-                    <p className={style.userRole}>{item.role}</p>
+                    <div className={style.userInfo}>
+                      <h3 className={style.userFullName}>{item.fullName}</h3>
+                      <p className={style.userRole}>{item.role}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
 
-          <div className={style.dots} id="reviewDots"></div>
+          <div className={style.dots}></div>
         </div>
-      </div>
+      </section>
       {/*---------------------------------------------------------------------------
       /// StartWithMe
       --------------------------------------------------------------------------- */}
@@ -256,32 +238,66 @@ export default function Home() {
       --------------------------------------------------------------------------- */}
 
       <div className={style.news}>
-        <span className={style.newTexts}>
-          <h1 className={style.newsTitle}>Browse our latest news</h1>
-        </span>
+        <h1 className={style.newsTitle}>Browse our latest news</h1>
 
-        <div className={style.newCards}>
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={26}
+          slidesPerView={3}
+          pagination={{
+            clickable: true,
+            el: `.${style.newDots}`,
+            bulletClass: style.newDot,
+            bulletActiveClass: style.newActiveDot,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            576: {
+              slidesPerView: 1.5,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 2.5,
+            },
+            1080: {
+              slidesPerView: 3,
+            },
+            1580: {
+              slidesPerView: 4.8,
+            },
+          }}
+          className={style.newCards}
+        >
           {newData.map((info, index) => (
-            <div key={index} className={style.newCard}>
-              <img className={style.newCardImg} src={info.img} alt="image" />
-              <button className={style.newCardBtn}>{info.btnText}</button>
-              <h3 className={style.newCardTitle}>{info.title}</h3>
-              <p className={style.newCardDescription}>{info.description}</p>
-              <hr className={style.newCardLine} />
-              <div className={style.newCardUser}>
-                <img
-                  className={style.newCardAvatar}
-                  src={info.avatar}
-                  alt="avatar"
-                />
-                <span className={style.userTexts}>
-                  <h4 className={style.userFullName}>{info.fullName}</h4>
-                  <h5 className={style.aboutUser}>{info.aboutUser}</h5>
-                </span>
+            <SwiperSlide key={index}>
+              <div className={style.newCard}>
+                <img className={style.newCardImg} src={info.img} alt="image" />
+                <button className={style.newCardBtn}>{info.btnText}</button>
+                <h3 className={style.newCardTitle}>{info.title}</h3>
+                <p className={style.newCardDescription}>{info.description}</p>
+                <hr className={style.newCardLine} />
+
+                <div className={style.newCardUser}>
+                  <img
+                    className={style.newCardAvatar}
+                    src={info.avatar}
+                    alt="avatar"
+                  />
+                  <span className={style.userTexts}>
+                    <h4 className={style.userFullName}>{info.fullName}</h4>
+                    <h5 className={style.aboutUser}>{info.aboutUser}</h5>
+                  </span>
+                </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
+
+        <div className={style.newDots}></div>
       </div>
     </div>
   );
