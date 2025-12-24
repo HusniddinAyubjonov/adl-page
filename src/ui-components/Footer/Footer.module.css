@@ -119,8 +119,9 @@ footer {
   transition: 0.1s ease;
 }
 
-.card button:hover {
+.card button:active {
   background-color: #6fa001;
+  transition: 0.1s ease;
 }
 
 .footerP3 {

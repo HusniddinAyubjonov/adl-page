@@ -91,6 +91,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
   margin-top: 1rem;
+  width: 100%;
 }
 
 /* <---------------------------------------------------------------------------
@@ -150,6 +151,10 @@
   vertical-align: middle;
 }
 
+.worldImg {
+  width: 65.4rem;
+}
+
 /* <---------------------------------------------------------------------------
       /// Our Skils
 ---------------------------------------------------------------------------> */
@@ -192,6 +197,61 @@
   letter-spacing: 0px;
   vertical-align: middle;
   cursor: pointer;
+}
+
+@media (min-width: 1480px) {
+  .ourMission {
+    padding: 12.6rem;
+  }
+
+  .section {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+    overflow: hidden;
+  }
+
+  .worldImgBox {
+    width: 70%;
+  }
+
+  .infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 14.2rem;
+  }
+
+  .infoTitle {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 4.2rem;
+    line-height: 5.5rem;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+
+  .descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-top: 1.6rem;
+  }
+
+  .description,
+  .secondDescription {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+
+  .worldImg {
+    width: 100%;
+    height: fit-content;
+  }
 }
 
 @media (min-width: 940px) and (max-width: 1280px) {
@@ -370,7 +430,7 @@
   .section {
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 20rem;
     justify-content: center;
     margin-bottom: 5rem;
     overflow: hidden;
@@ -378,13 +438,13 @@
 
   .worldImgBox {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
+    margin-top: 6rem;
   }
 
   .worldImg {
     width: 50%;
-    height: fit-content;
   }
 
   .infoBox {
@@ -514,12 +574,13 @@
 
   .worldImgBox {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
+    margin-top: 2rem;
   }
 
   .worldImg {
-    width: 100%;
+    width: 80%;
     height: fit-content;
   }
 
@@ -642,8 +703,9 @@
 
   .worldImgBox {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
+    margin-top: 2rem;
   }
 
   .worldImg {

@@ -1,4 +1,4 @@
-import style from "./style/global.module.css";
+import  "./style/global.module.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import ScrollToTop from "./scroll-to-top.component";

@@ -17,19 +17,8 @@
   vertical-align: middle;
 }
 
-.pricingDescription {
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-}
-
 .pricingCards {
-  margin-top: 4rem;
-  display: flex;
+  margin-top: 2rem;
   gap: 2.6rem;
 }
 
@@ -95,8 +84,9 @@
   cursor: pointer;
 }
 
-.btnNextPage:hover {
+.btnNextPage:active {
   background-color: #6fa001;
+  transition: 0.1s ease;
 }
 
 .pricingCardsWrapper {
@@ -105,42 +95,34 @@
 }
 
 .pricingDots {
-  display: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2rem;
 }
 
+.pricingDot {
+  width: 12px;
+  height: 12px;
+  background: #444;
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.pricingDotActive {
+  background: #88b702;
+  transform: scale(1.2);
+}
+
+/* ===== ADAPTIVE ===== */
+
 @media (max-width: 1280px) {
-  .pricingCards {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 2.6rem;
-    padding-bottom: 2rem;
-  }
-
-  .pricingCard {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-  }
-
   .pricingDots {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 2rem;
-  }
-
-  .pricingDots span {
-    width: 12px;
-    height: 12px;
-    background: #444;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
-
-  .pricingDots :global(.active) {
-    background: #88b702 !important;
-    transform: scale(1.2);
   }
 }
 
@@ -219,18 +201,8 @@
     padding: 0 2rem;
   }
 
-  .pricingCard {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-  }
-
   .pricingTitle {
     font-size: 3.8rem;
-    text-align: start;
-  }
-
-  .pricingDescription {
-    width: 100%;
     text-align: start;
   }
 

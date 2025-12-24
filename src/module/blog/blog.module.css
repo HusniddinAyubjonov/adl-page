@@ -217,7 +217,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 940px) and (max-width: 1280px) {
+@media (min-width: 1175px) and (max-width: 1420px) {
   .container {
     padding: 0 6rem;
   }
@@ -248,14 +248,13 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 940px) {
+@media (min-width: 768px) and (max-width: 1175px) {
   .container {
     padding: 0 4rem;
   }
 
   .blogTitle {
-    font-size: 4rem;
-    line-height: 5rem;
+    display: none;
   }
 
   /*---------------------------------------------------------------------------
@@ -300,9 +299,7 @@
   }
 
   .blogTitle {
-    font-size: 3.8rem;
-    line-height: 4.6rem;
-    text-align: start;
+    display: none;
   }
 
   /*---------------------------------------------------------------------------
@@ -331,6 +328,13 @@
     width: 100%;
   }
 
+  .postCards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .postCard {
     width: 35.8rem;
   }
@@ -349,6 +353,10 @@
     width: 6rem;
     height: 6rem;
   }
+
+  .posts {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 389px) {
@@ -361,8 +369,7 @@
   }
 
   .blogTitle {
-    font-size: 3.4rem;
-    line-height: 4rem;
+    display: none;
   }
 
   /*---------------------------------------------------------------------------
@@ -425,5 +432,16 @@
   .aboutUser {
     margin-top: 0;
     font-size: 1.4rem;
+  }
+
+  .postCards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .posts {
+    margin-top: 0;
   }
 }

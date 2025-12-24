@@ -339,6 +339,12 @@
   cursor: pointer;
 }
 
+.buildFeatureBtn:active {
+  background-color: #6fa001;
+  transition: 0.1s ease;
+  color: #ffffff;
+}
+
 .buildFeatureImg {
   margin-top: -7.5rem;
 }

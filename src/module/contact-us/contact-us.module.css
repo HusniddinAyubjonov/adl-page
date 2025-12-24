@@ -49,7 +49,6 @@ textarea {
   padding: 2rem 2rem;
   border-radius: 100px;
   color: #ffffff;
-  font-family: DM Sans;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.7rem;
@@ -61,6 +60,12 @@ textarea {
   border-radius: 1.6rem;
   padding-bottom: 11.4rem;
   resize: none;
+}
+
+input:hover,
+textarea:hover {
+  outline: 1px solid #88b702;
+  outline-offset: 2px;
 }
 
 .sendBtn {
@@ -81,7 +86,7 @@ textarea {
   padding: 2.8rem 3.2rem;
 }
 
-.sendBtn:hover {
+.sendBtn:active {
   background-color: #6fa001;
   transition: 0.1s ease;
 }

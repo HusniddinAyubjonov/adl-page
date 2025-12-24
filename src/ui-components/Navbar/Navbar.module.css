@@ -53,7 +53,7 @@
   transition: 0.1s ease;
 }
 
-.downloadCV:hover {
+.downloadCV:active {
   background-color: #6fa001;
   transition: 0.1s ease;
 }
